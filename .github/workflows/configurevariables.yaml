@@ -1,4 +1,4 @@
-name: Variable
+name: ConfigureVariable
 
 on:
   workflow_dispatch:
@@ -14,4 +14,6 @@ jobs:
     steps:
       - run: echo "Hi"
       - run: echo "$name and ${{ secrets.PIN }} and ${{ vars.PLACE }}"
+      - run: echo "github metadata data  ${{ github.repository }} ${{ github.repository_owner }} ${{ github.actor }} ${{ github.ref }}"
+
         
