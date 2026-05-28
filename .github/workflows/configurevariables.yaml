@@ -13,6 +13,10 @@ on:
           - prod
           - qa
 
+      version:
+         description:  "Dcoker version"
+         required: true
+
 env:
   name: satya
 
