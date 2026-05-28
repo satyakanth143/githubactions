@@ -13,6 +13,6 @@ jobs:
       lastname: vanga
     steps:
       - run: echo "Hi"
-      - run: echo "${{ env.name }} and ${{ env.lastname }} and ${{ env.place }}"
+      - run: echo "$name and ${{ env.lastname }} and $place"
         env:
           place: AMP
