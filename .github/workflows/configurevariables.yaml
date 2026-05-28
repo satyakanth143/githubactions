@@ -1,0 +1,17 @@
+name: Variable
+
+on:
+  workflow_dispatch:
+
+env:
+  name: satya
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    env:
+      lastname: vanga
+    steps:
+      - run: echo "Hi"
+      - run: echo "$name and ${{ secrets.PIN }} and ${{ vars.PLACE }}"
+        
