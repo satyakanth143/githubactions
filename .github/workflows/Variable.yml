@@ -1,4 +1,4 @@
-name: FIrst_Workflow
+name: Variable
 
 on:
   workflow_dispatch:
