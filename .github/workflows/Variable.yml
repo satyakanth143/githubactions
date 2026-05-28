@@ -2,16 +2,17 @@ name: FIrst_Workflow
 
 on:
   workflow_dispatch:
-  env:
-    name: satya
+
+env:
+  name: satya
 
 jobs:
   say-hello:
-   runs-on: ubuntu-latest
-   env:
-     lastname: vanga
-   steps:
-   env:
-     place: AMP
-     - run: echo "Hi"
-     - run : echo " $name and $lastname and $place"
+    runs-on: ubuntu-latest
+    env:
+      lastname: vanga
+    steps:
+      - run: echo "Hi"
+      - run: echo "${{ env.name }} and ${{ env.lastname }} and ${{ env.place }}"
+        env:
+          place: AMP
